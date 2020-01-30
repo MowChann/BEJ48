@@ -1,5 +1,6 @@
-## 指南
+# BEJ48 应援相关数据
 
-### 哔哩哔哩
+### 导航
 
-[B站账号一览](bilibili/account)
+- 哔哩哔哩
+  - [B站账号一览](bilibili/account)
