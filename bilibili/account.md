@@ -18,6 +18,7 @@
 | Team B |  孙晓艳  |   Sun XiaoYan   | BEJ48 二期生 |   [不一样的小幸运](https://space.bilibili.com/41908254)   | 41908254  |  ✅在团   |
 | Team B |  田姝丽  |   Tian ShuLi    | SNH48 五期生 |   [田野的奶茶小铺](https://space.bilibili.com/15084177)   | 15084177  |  ✅在团   |
 | Team B |  熊素君  |   Xiong SuJun   | SNH48 五期生 |  [完美主义熊女士](https://space.bilibili.com/236202893)   | 236202893 |  ✅在团   |
+| Team B |   夏越   |     Xia Yue     | SNH48 六期生 | [憨厚老实的夏老板儿](https://space.bilibili.com/30243859/)| 30243859  |  💔已退   |
 | Team B |  闫明筠  |   Yan MingJun   | SNH48 四期生 |       [菌菇吗](https://space.bilibili.com/3684011)        |  3684011  |  ✅在团   |
 | Team B |   杨鑫   |    Yang Xin     | BEJ48 三期生 |    [pikapika_jo](https://space.bilibili.com/387692387)    | 387692387 |  💔已退   |
 | Team B |  张羽涵  |   Zhang YuHan   | SHY48 二期生 |  [是银子不是脑子w](https://space.bilibili.com/11333064)   | 11333064  |  ✅在团   |
@@ -31,6 +32,7 @@
 | Team E |   李梓   |      Li Zi      | SNH48 六期生 |      [Aki_安凉](https://space.bilibili.com/20049958)      | 20049958  |  💔已退   |
 | Team E |  马玉灵  |    Ma YuLing    | SNH48 六期生 |   [小马小马是小马](https://space.bilibili.com/23553661)   | 23553661  |  ✅在团   |
 | Team E |  彭嘉敏  |   Peng JiaMin   | BEJ48 四期生 | [隔壁二班的小彭同学](https://space.bilibili.com/93789411) | 93789411  |  ✅在团   |
+| Team E |  任蔓琳  |   Ren ManLin    | BEJ48 五期生 | [一颗麦芽糖_Maiya](https://space.bilibili.com/454828714/) | 454828714 |  ✅在团   |
 | Team E |  苏杉杉  |   Su ShanShan   | SNH48 六期生 |   [魔法少女Air酱](https://space.bilibili.com/17196336)    | 17196336  |  ✅在团   |
 | Team E |  顼凘炀  |    Xu SiYang    | SNH48 六期生 |     [小星星星哒](https://space.bilibili.com/16481728)     | 16481728  |  ✅在团   |
 | Team E |   熊鑫   |    Xiong Xin    | BEJ48 四期生 |   [三斤的小日常](https://space.bilibili.com/244375457)    | 244375457 |  ✅在团   |
