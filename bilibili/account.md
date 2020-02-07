@@ -10,6 +10,7 @@
 | Team B |  胡晓慧  |   Hu XiaoHui    | SNH48 五期生 |     [小包hoho](https://space.bilibili.com/395611603)      | 395611603 |  ✅在团   |
 |        |          |                 |              |    [小包hohoho](https://space.bilibili.com/402847635)     | 402847635 |  ✅在团   |
 | Team B |  刘姝贤  |   Liu ShuXian   | SNH48 六期生 |    [yeah耶椰奶](https://space.bilibili.com/124963575)     | 124963575 |  ✅在团   |
+| Team B |  林溪荷  |     Lin XiHe    | SNH48 六期生 |     [是小林呀_](https://space.bilibili.com/420409318)     | 420409318 |  ✅在团   |
 | Team B |  李瑜璇  |    Li YuXuan    | CKG48 一期生 |    [肥鱼是真滴肥](https://space.bilibili.com/49819859)    | 49819859  |  💔已退   |
 | Team B |  曲美霖  |    Qu MeiLin    | BEJ48 四期生 |  [非著名网友小曲](https://space.bilibili.com/470229653)   | 470229653 |  ✅在团   |
 | Team B |  毛其羽  |    Mao QiYu     | BEJ48 二期生 |      [KMB貓仔](https://space.bilibili.com/43550145)       | 43550145  |  💔已退   |
