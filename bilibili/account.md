@@ -10,7 +10,7 @@
 | Team B |  胡晓慧  |   Hu XiaoHui    | SNH48 五期生 |      [小包hoho](https://space.bilibili.com/395611603)       | 395611603 |  ✅在团   |
 |        |          |                 |              |     [小包hohoho](https://space.bilibili.com/402847635)      | 402847635 |  ✅在团   |
 | Team B |  刘姝贤  |   Liu ShuXian   | SNH48 六期生 |     [yeah耶椰奶](https://space.bilibili.com/124963575)      | 124963575 |  ✅在团   |
-| Team B |  林溪荷  |    Lin XiHe     | SNH48 六期生 | [是小林还是小荷呢-\_-](https://space.bilibili.com/420409318) | 420409318 |  ✅在团   |
+| Team B |  林溪荷  |    Lin XiHe     | SNH48 六期生 | [是小林还是小荷呢-\_-](https://space.bilibili.com/420409318)| 420409318 |  ✅在团   |
 | Team B |  李瑜璇  |    Li YuXuan    | CKG48 一期生 |       [比干大哥](https://space.bilibili.com/49819859)       | 49819859  |  💔已退   |
 | Team B |  曲美霖  |    Qu MeiLin    | BEJ48 四期生 |   [非著名网友小曲](https://space.bilibili.com/470229653)    | 470229653 |  ✅在团   |
 | Team B |  毛其羽  |    Mao QiYu     | BEJ48 二期生 |       [KMB貓仔](https://space.bilibili.com/43550145)        | 43550145  |  💔已退   |
@@ -22,7 +22,7 @@
 | Team B |   夏越   |     Xia Yue     | SNH48 六期生 | [憨厚老实的夏老板儿](https://space.bilibili.com/30243859/)  | 30243859  |  💔已退   |
 | Team B |  闫明筠  |   Yan MingJun   | SNH48 四期生 |        [菌菇吗](https://space.bilibili.com/3684011)         |  3684011  |  ✅在团   |
 | Team B |   杨鑫   |    Yang Xin     | BEJ48 三期生 |      [是杨鑫耶](https://space.bilibili.com/387692387)       | 387692387 |  💔已退   |
-| Team B |  张羽涵  |   Zhang YuHan   | SHY48 二期生 |   [是银子不是脑子w](https://space.bilibili.com/11333064)    | 11333064  |  ✅在团   |
+| Team B |  张羽涵  |   Zhang YuHan   | SHY48 二期生 |   [是银子不是脑子w](https://space.bilibili.com/11333064)    | 11333064  |  💔已退   |
 | Team B |  赵天杨  |  Zhao TianYang  | SHY48 三期生 |  [这条街最靓的崽儿](https://space.bilibili.com/382751025)   | 382751025 |  ✅在团   |
 | Team E |  陈倩楠  |  Chen QianNan   | SNH48 六期生 |     [悠唐小王子](https://space.bilibili.com/384471311)      | 384471311 |  ✅在团   |
 | Team E |  程宇璐  |   Cheng YuLu    | BEJ48 五期生 |     [悠唐程二少](https://space.bilibili.com/436245862)      | 436245862 |  ✅在团   |
