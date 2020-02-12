@@ -19,7 +19,7 @@
 | Team B |  沈小爱  |   Shen XiaoAi   | BEJ48 二期生 |   [追风少年沈小爱](https://space.bilibili.com/109607529)    | 109607529 |  ✅在团   |
 | Team B |  孙晓艳  |   Sun XiaoYan   | BEJ48 二期生 |    [不一样的小幸运](https://space.bilibili.com/41908254)    | 41908254  |  ✅在团   |
 | Team B |  田姝丽  |   Tian ShuLi    | SNH48 五期生 |    [田野的奶茶小铺](https://space.bilibili.com/15084177)    | 15084177  |  ✅在团   |
-| Team B |  熊素君  |   Xiong SuJun   | SNH48 五期生 |   [完美主义熊女士](https://space.bilibili.com/236202893)    | 236202893 |  ✅在团   |
+| Team B |  熊素君  |   Xiong SuJun   | SNH48 五期生 |   [完美主义熊女士](https://space.bilibili.com/236202893)    | 236202893 |  💔已退   |
 | Team B |   夏越   |     Xia Yue     | SNH48 六期生 | [憨厚老实的夏老板儿](https://space.bilibili.com/30243859/)  | 30243859  |  💔已退   |
 | Team B |  闫明筠  |   Yan MingJun   | SNH48 四期生 |        [菌菇吗](https://space.bilibili.com/3684011)         |  3684011  |  ✅在团   |
 | Team B |   杨鑫   |    Yang Xin     | BEJ48 三期生 |      [是杨鑫耶](https://space.bilibili.com/387692387)       | 387692387 |  💔已退   |
