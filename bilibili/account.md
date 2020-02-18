@@ -9,6 +9,7 @@
 | Team B |  胡丽芝  |    Hu LiZhi     | BEJ48 二期生 |   [小铁的showtime](https://space.bilibili.com/313666067)    | 313666067 |  💔已退   |
 | Team B |  胡晓慧  |   Hu XiaoHui    | SNH48 五期生 |      [小包hoho](https://space.bilibili.com/395611603)       | 395611603 |  ✅在团   |
 |        |          |                 |              |     [小包hohoho](https://space.bilibili.com/402847635)      | 402847635 |  ✅在团   |
+| Team B |   吕蕊   |      Lv Rui     | BEJ48 七期生 |      [lvxiaole_](https://space.bilibili.com/253647370)      | 253647370 |  ✅在团   |
 | Team B |  刘姝贤  |   Liu ShuXian   | SNH48 六期生 |     [yeah耶椰奶](https://space.bilibili.com/124963575)      | 124963575 |  ✅在团   |
 | Team B |  林溪荷  |    Lin XiHe     | SNH48 六期生 | [是小林还是小荷呢-\_-](https://space.bilibili.com/420409318)| 420409318 |  ✅在团   |
 | Team B |  李瑜璇  |    Li YuXuan    | CKG48 一期生 |       [比干大哥](https://space.bilibili.com/49819859)       | 49819859  |  💔已退   |
