@@ -1,5 +1,8 @@
 # BEJ48 应援数据
 
+[http://data.48.mowchan.me/](http://data.48.mowchan.me/)
+
+
 本仓库主要提供 BEJ48 Team B 的公演信息，方便查询场次、Unit 内容以及 MC 话题；收集 Team B 各个原创、拼盘公演的相关信息。此外还收集 SNH48 Group 成员（包括退团成员）公开的 b 站账号。
 
 ### 列表
