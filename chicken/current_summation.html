@@ -1,212 +1,161 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>当前鸡腿总数统计 - 有糖鸡腿榜</title>
-		<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
-		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://cdn.bootcss.com/highcharts/8.0.4/highcharts.min.js"></script>
-		<script src="https://cdn.bootcss.com/highcharts/8.0.4/modules/sunburst.min.js"></script>
-		<style type="text/css">
-			.row {
-			margin-top: 1.6em;
-			}
-
-			#team-color {
-			margin-top: 0;
-			}
-
-			#team-color .teamName, #team-index .teamName {
-				width: calc(100% / 10);
-				float: left;
-				white-space: pre-line;
-			}
-
-			.table tr td, .table tr th {
-			font-weight: bolder;
-			}
-
-			.table tr td:nth-child(1) {
-				text-align: center;
-				width: 45px;
-				vertical-align: middle;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-2"></div>
-				<div class="col-xs-8">
-					<div id="chicken-all-percenter"></div>
-				</div>
-				<div class="col-xs-2"></div>
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="笨队队推 佛系更新 ~" />
+	<meta name="keywords" content="SNH48, BEJ48, GNZ48, 偶像应援" />
+	<title>实时鸡腿总数统计 - 有糖鸡腿榜</title>
+	<link href="http://48.mowchan.me/usr/themes/SimpleStone/assets/img/favicon.ico" rel="shortcut icon">
+	<link href="http://48.mowchan.me/usr/themes/SimpleStone/assets/css/style.css" rel="stylesheet">
+	<link href="http://cdn.bootcss.com/font-awesome/5.13.0/css/fontawesome.min.css" rel="stylesheet">
+	<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/highcharts/8.0.4/highcharts.min.js"></script>
+	<script src="http://cdn.bootcss.com/highcharts/8.0.4/modules/sunburst.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+	<script src="http://cdn.bootcss.com/respond.js/1.4.1/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<div class="wrap">
+	<header>
+		<a href="http://ut.48.mowchan.me/" class="logo-link">
+			<img src="http://48.mowchan.me/usr/themes/SimpleStone/assets/logo-48g.svg">
+		</a>
+		<li class="nav-list-item">
+			<a href="http://ut.48.mowchan.me/">首页</a>
+		</li>
+		<li class="nav-list-item">
+			<a class="nav-list-link active" href="http://ut.48.mowchan.me/chicken/">有糖鸡腿榜</a>
+		</li>
+		<li class="nav-list-item">
+			<a href="http://ut.48.mowchan.me/stage/">公演记录</a>
+		</li>
+		<li class="nav-list-item">
+			<a href="http://48.mowchan.me/show/">b站账号</a>
+		</li>
+		<li class="nav-list-item">
+			<a href="http://48.mowchan.me/about.html#数据站">关于</a>
+		</li>
+	</header>
+	<section class="container">
+		<div class="post">
+			<div id="sunburst_all_team_sum">
 			</div>
-			<div class="row">
-				<div class="col-xs-2"></div>
-				<div class="col-xs-8">
-					<div id="chicken-all-sunbrust"></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-2"></div>
-				<div class="col-xs-8">
-					<div id="chicken-all-sunbrust2"></div>
-				</div>
+			<div id="sunburst_all_act_group_sum">
 			</div>
 		</div>
-	<script type="text/javascript">
+	</section>
+	<footer>
+		<div class="copyright">
+			&copy; 2018 - 2020 <a href="http://48.mowchan.me/">喵酱48</a><br>
+		</div>
+	</footer>
+</div>
+<script type="text/javascript">
+	Highcharts.setOptions({
+		lang: {
+				thousandsSep: ','
+		}
+	});
 
-	var series_all_percenter = [
-	  ["Team B", 2315673],
-	  ["Team E", 983191],
-	  ["Team J", 633487]
-	]
+	data_all_team_sum = []
+	data_all_act_group_sum = []
 
-	var colors = ["#ff2471", "#0cc8c3", "#006ab7"]
-
-Highcharts.setOptions({
-    lang: {
-        thousandsSep: ','
-    }
-});
-	function initChart() {
-	  $('#chicken-all-percenter').highcharts({
-	  	chart: {
-	  		height: '95%'
-	  	},
-	    credits: {
-	      enabled: false
-	    },
-	    chart: {
-	      plotBackgroundColor: null,
-	      plotBorderWidth: null,
-	      plotShadow: false
-	    },
-	    title: {
-	      text: '悠唐各队伍鸡腿总数比例'
-	    },
-	    colors: colors,
-	    tooltip: {
-	      headerFormat: "<b>{point.key}</b><br/>",
-	      pointFormat: '{series.name}：<b>{point.percentage:.1f}%</b><br />票数合计：<b>{point.y:.1f}</b>'
-	    },
-	    plotOptions: {
-	      pie: {
-	        allowPointSelect: true,
-	        cursor: 'pointer',
-	        dataLabels: { enabled: true, inside: true, color: '#000000', connectorColor: 'transparent', format: '<b>{point.name}</b>: {point.percentage:.1f} %' },
-	        showInLegend: true
-	      }
-	    },
-	    series: [{
-	      type: 'pie',
-	      name: '票数占比',
-	      data: series_all_percenter
-	    }]
-	  });
-	}
-
-	$(document).ready(function () {
-	  initChart();
+	$.getJSON("data/all_team_sum.json",function(data){
+		data_all_team_sum = data
+	})
+	$.getJSON("data/all_act_group_sum.json",function(data){
+		data_all_act_group_sum = data
 	})
 
+	$('#sunburst_all_team_sum').highcharts({
+		title: {
+			text: 'BEJ48各队伍鸡腿总数详细比例'
+		},
+		subtitle: {
+			text: ''
+		},
+		series: [{
+			type: "sunburst",
+			data: data_all_team_sum,
+			allowDrillToNode: true,
+			cursor: 'pointer',
+			dataLabels: {
+				formatter: function() {
+					var point = this.point,
+							group = this.series.data.filter(x => x.parent === point.parent);
+					var groupTotal = group.map(x => x.value).reduce((a, b) => a + b, 0),
+							percentage = 100 * point.value/groupTotal;
+					return point.name + '<br>' + percentage.toFixed(1) + '%';
+				}
+			},
+			levels: [{
+				level: 1,
+				levelIsConstant: false
+			}, {
+				level: 2,
+				colorByPoint: true
+			},
+			{
+				level: 3,
+				colorVariation: {
+					key: 'brightness',
+					to: 0.2
+				}
+			}]
+		}],
+		tooltip: {
+			headerFormat: "",
+			pointFormat: '<b>{point.name}</b>获得 <b>{point.value}</b> 个鸡腿'
+		}
+	})
 
-var data = [{"id": "11", "parent": "", "name": "BEJ48"}, {"id": "1101", "parent": "11", "name": "Team B", "color": "#ff2471"}, {"id": "1102", "parent": "11", "name": "Team E", "color": "#0cc8c3"}, {"id": "1103", "parent": "11", "name": "Team J", "color": "#006ab7"}, {"id": "5585764356", "parent": "1103", "name": "熊文婕", "value": 0}, {"id": "4998561802", "parent": "1101", "name": "宁轲", "value": 171050}, {"id": "4998561801", "parent": "1101", "name": "吕蕊", "value": 9280}, {"id": "4528799751", "parent": "1102", "name": "张智杰", "value": 396384}, {"id": "4528799750", "parent": "1102", "name": "曾洁", "value": 0}, {"id": "4528799749", "parent": "1102", "name": "陈亿杉", "value": 5}, {"id": "831078", "parent": "1102", "name": "任蔓琳", "value": 64355}, {"id": "825969", "parent": "1102", "name": "程宇璐", "value": 45}, {"id": "711746", "parent": "1103", "name": "周湘", "value": 48039}, {"id": "711739", "parent": "1102", "name": "熊鑫", "value": 175366}, {"id": "711735", "parent": "1101", "name": "曲美霖", "value": 5}, {"id": "711732", "parent": "1102", "name": "彭嘉敏", "value": 436223}, {"id": "679466", "parent": "1102", "name": "王雨兰", "value": 42759}, {"id": "624121", "parent": "1103", "name": "何阳青青", "value": 20}, {"id": "623828", "parent": "1102", "name": "李娜", "value": 299348}, {"id": "618319", "parent": "1101", "name": "程戈", "value": 110944}, {"id": "614528", "parent": "1103", "name": "柏欣妤", "value": 13285}, {"id": "610042", "parent": "1103", "name": "唐霖", "value": 37073}, {"id": "609002", "parent": "1101", "name": "赵天杨", "value": 293828}, {"id": "538697", "parent": "1101", "name": "沈小爱", "value": 102681}, {"id": "528337", "parent": "1103", "name": "刘一菲", "value": 38416}, {"id": "528335", "parent": "1103", "name": "金锣赛", "value": 119728}, {"id": "528329", "parent": "1101", "name": "孙晓艳", "value": 17409}, {"id": "480675", "parent": "1102", "name": "张爱静", "value": 240441}, {"id": "459999", "parent": "1103", "name": "韩家乐", "value": 263731}, {"id": "407168", "parent": "1103", "name": "王雨煊", "value": 10}, {"id": "407127", "parent": "1103", "name": "张怀瑾", "value": 333369}, {"id": "407126", "parent": "1103", "name": "杨晔", "value": 726944}, {"id": "407124", "parent": "1103", "name": "叶苗苗", "value": 21485}, {"id": "407121", "parent": "1103", "name": "孙语姗", "value": 34898}, {"id": "407110", "parent": "1103", "name": "刘闲", "value": 37090}, {"id": "407104", "parent": "1103", "name": "葛司琪", "value": 4755}, {"id": "327602", "parent": "1102", "name": "刘胜男", "value": 5}, {"id": "327600", "parent": "1102", "name": "顼凘炀", "value": 0}, {"id": "327598", "parent": "1102", "name": "张笑盈", "value": 337140}, {"id": "327595", "parent": "1102", "name": "郑一凡", "value": 3100}, {"id": "327587", "parent": "1102", "name": "冯思佳", "value": 38159}, {"id": "327581", "parent": "1101", "name": "青钰雯", "value": 249799}, {"id": "327580", "parent": "1101", "name": "张梦慧", "value": 103934}, {"id": "327579", "parent": "1101", "name": "刘姝贤", "value": 51877}, {"id": "327578", "parent": "1101", "name": "林溪荷", "value": 10}, {"id": "63571", "parent": "1101", "name": "田姝丽", "value": 165217}, {"id": "63559", "parent": "1101", "name": "胡晓慧", "value": 580}, {"id": "6745", "parent": "1101", "name": "闫明筠", "value": 73350}];
-
-$('#chicken-all-sunbrust').highcharts({
-	chart: {
-		height: '70%'
-	},
-  title: {
-    text: '悠唐各队伍鸡腿总数详细比例'
-  },
-  subtitle: {
-    text: '数据更新时间：2020/4/19 22:53'
-  },
-  series: [{
-    type: "sunburst",
-    data: data,
-    allowDrillToNode: true,
-    cursor: 'pointer',
-    dataLabels: {
-	    formatter: function() {
-        var point = this.point,
-            group = this.series.data.filter(x => x.parent === point.parent);
-        var groupTotal = group.map(x => x.value).reduce((a, b) => a + b, 0),
-            percentage = 100 * point.value/groupTotal;
-        return point.name + '<br>' + percentage.toFixed(1) + '%';
-	    }
-    },
-    levels: [{
-      level: 1,
-      levelIsConstant: false,
-    }, {
-      level: 2,
-      colorByPoint: true
-    },
-    {
-      level: 3,
-      colorVariation: {
-        key: 'brightness',
-        to: 0.25
-      }
-    }]
-  }],
-  tooltip: {
-    headerFormat: "",
-    pointFormat: '<b>{point.name}</b>获得 <b>{point.value}</b> 个鸡腿'
-  }
-});
-
-var data2 = [{"id": "11", "parent": "", "name": "BEJ48", "color": "#ffffff"}, {"id": "1", "parent": "11", "name": "第一组", "color": "#ff8482"}, {"id": "2", "parent": "11", "name": "第二组", "color": "#f5b280"}, {"id": "3", "parent": "11", "name": "第三组", "color": "#63cb99"}, {"id": "4", "parent": "11", "name": "第四组", "color": "#7ba1e1"}, {"id": "4998561802", "parent": "1", "name": "宁轲", "value": 171050}, {"id": "4998561801", "parent": "4", "name": "吕蕊", "value": 9280}, {"id": "4528799751", "parent": "2", "name": "张智杰", "value": 396384}, {"id": "831078", "parent": "4", "name": "任蔓琳", "value": 64355}, {"id": "711746", "parent": "3", "name": "周湘", "value": 48039}, {"id": "711739", "parent": "3", "name": "熊鑫", "value": 175366}, {"id": "711735", "parent": "4", "name": "曲美霖", "value": 5}, {"id": "711732", "parent": "3", "name": "彭嘉敏", "value": 436223}, {"id": "679466", "parent": "4", "name": "王雨兰", "value": 42759}, {"id": "623828", "parent": "4", "name": "李娜", "value": 299348}, {"id": "618319", "parent": "2", "name": "程戈", "value": 110944}, {"id": "614528", "parent": "3", "name": "柏欣妤", "value": 13285}, {"id": "610042", "parent": "4", "name": "唐霖", "value": 37073}, {"id": "609002", "parent": "2", "name": "赵天杨", "value": 293828}, {"id": "538697", "parent": "2", "name": "沈小爱", "value": 102681}, {"id": "528337", "parent": "3", "name": "刘一菲", "value": 38416}, {"id": "528335", "parent": "3", "name": "金锣赛", "value": 119728}, {"id": "528329", "parent": "4", "name": "孙晓艳", "value": 17409}, {"id": "480675", "parent": "1", "name": "张爱静", "value": 240441}, {"id": "407127", "parent": "1", "name": "张怀瑾", "value": 333369}, {"id": "407126", "parent": "3", "name": "杨晔", "value": 726944}, {"id": "407124", "parent": "4", "name": "叶苗苗", "value": 21485}, {"id": "407121", "parent": "2", "name": "孙语姗", "value": 34898}, {"id": "407110", "parent": "1", "name": "刘闲", "value": 37090}, {"id": "407104", "parent": "2", "name": "葛司琪", "value": 4755}, {"id": "327598", "parent": "1", "name": "张笑盈", "value": 337140}, {"id": "327595", "parent": "4", "name": "郑一凡", "value": 3100}, {"id": "327587", "parent": "2", "name": "冯思佳", "value": 38159}, {"id": "327580", "parent": "1", "name": "张梦慧", "value": 103934}, {"id": "327579", "parent": "1", "name": "刘姝贤", "value": 51877}, {"id": "63571", "parent": "1", "name": "田姝丽", "value": 165217}, {"id": "63559", "parent": "3", "name": "胡晓慧", "value": 580}, {"id": "6745", "parent": "2", "name": "闫明筠", "value": 73350}]
-
-$('#chicken-all-sunbrust2').highcharts({
-	chart: {
-		height: '70%'
-	},
-  title: {
-    text: '悠唐重新分组后各组鸡腿总数详细比例'
-  },
-  subtitle: {
-    text: '数据更新时间：2020/4/19 22:53'
-  },
-  series: [{
-    type: "sunburst",
-    data: data2,
-    allowDrillToNode: true,
-    cursor: 'pointer',
-    dataLabels: {
-	    formatter: function() {
-        var point = this.point,
-            group = this.series.data.filter(x => x.parent === point.parent);
-        var groupTotal = group.map(x => x.value).reduce((a, b) => a + b, 0),
-            percentage = 100 * point.value/groupTotal;
-        return point.name + '<br>' + percentage.toFixed(1) + '%';
-	    }
-    },
-    levels: [{
-      level: 1,
-      levelIsConstant: false,
-    }, {
-      level: 2,
-      colorByPoint: true
-    },
-    {
-      level: 3,
-      colorVariation: {
-        key: 'brightness',
-        to: 0.25
-      }
-    }]
-  }],
-  tooltip: {
-    headerFormat: "",
-    pointFormat: '<b>{point.name}</b>获得 <b>{point.value}</b> 个鸡腿'
-  }
-});
-	</script>
-	</body>
+	$('#sunburst_all_act_group_sum').highcharts({
+		title: {
+			text: 'BEJ48重新分组后各组鸡腿总数详细比例'
+		},
+		subtitle: {
+			text: ''
+		},
+		series: [{
+			type: "sunburst",
+			data: data_all_act_group_sum,
+			allowDrillToNode: true,
+			cursor: 'pointer',
+			dataLabels: {
+				formatter: function() {
+					var point = this.point,
+							group = this.series.data.filter(x => x.parent === point.parent);
+					var groupTotal = group.map(x => x.value).reduce((a, b) => a + b, 0),
+							percentage = 100 * point.value/groupTotal;
+					return point.name + '<br>' + percentage.toFixed(1) + '%';
+				}
+			},
+			levels: [{
+				level: 1,
+				levelIsConstant: false
+			}, {
+				level: 2,
+				colorByPoint: true
+			},
+			{
+				level: 3,
+				colorVariation: {
+					key: 'brightness',
+					to: 0.2
+				}
+			}]
+		}],
+		tooltip: {
+			headerFormat: "",
+			pointFormat: '<b>{point.name}</b>获得 <b>{point.value}</b> 个鸡腿'
+		}
+	});
+</script>
+<script src="http://cdn.bootcss.com/pangu/4.0.7/pangu.min.js"></script>
+</body>
 </html>
