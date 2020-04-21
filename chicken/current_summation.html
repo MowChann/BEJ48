@@ -56,105 +56,101 @@
 	</footer>
 </div>
 <script type="text/javascript">
+
 	Highcharts.setOptions({
 		lang: {
 				thousandsSep: ','
 		}
-	});
-
-	data_all_team_sum = []
-	data_all_act_group_sum = []
+	})
 
 	$.getJSON("data/all_team_sum.json",function(data){
-		data_all_team_sum = data
+		$('#sunburst_all_team_sum').highcharts({
+			title: {
+				text: 'BEJ48各队伍鸡腿总数详细比例'
+			},
+			subtitle: {
+				text: ''
+			},
+			series: [{
+				type: "sunburst",
+				data: data,
+				allowDrillToNode: true,
+				cursor: 'pointer',
+				dataLabels: {
+					formatter: function() {
+						var point = this.point,
+								group = this.series.data.filter(x => x.parent === point.parent);
+						var groupTotal = group.map(x => x.value).reduce((a, b) => a + b, 0),
+								percentage = 100 * point.value/groupTotal;
+						return point.name + '<br>' + percentage.toFixed(1) + '%';
+					}
+				},
+				levels: [{
+					level: 1,
+					levelIsConstant: false
+				}, {
+					level: 2,
+					colorByPoint: true
+				},
+				{
+					level: 3,
+					colorVariation: {
+						key: 'brightness',
+						to: 0.2
+					}
+				}]
+			}],
+			tooltip: {
+				headerFormat: "",
+				pointFormat: '<b>{point.name}</b>获得 <b>{point.value}</b> 个鸡腿'
+			}
+		})
 	})
+
 	$.getJSON("data/all_act_group_sum.json",function(data){
-		data_all_act_group_sum = data
+		$('#sunburst_all_act_group_sum').highcharts({
+			title: {
+				text: 'BEJ48重新分组后各组鸡腿总数详细比例'
+			},
+			subtitle: {
+				text: ''
+			},
+			series: [{
+				type: "sunburst",
+				data: data,
+				allowDrillToNode: true,
+				cursor: 'pointer',
+				dataLabels: {
+					formatter: function() {
+						var point = this.point,
+								group = this.series.data.filter(x => x.parent === point.parent);
+						var groupTotal = group.map(x => x.value).reduce((a, b) => a + b, 0),
+								percentage = 100 * point.value/groupTotal;
+						return point.name + '<br>' + percentage.toFixed(1) + '%';
+					}
+				},
+				levels: [{
+					level: 1,
+					levelIsConstant: false
+				}, {
+					level: 2,
+					colorByPoint: true
+				},
+				{
+					level: 3,
+					colorVariation: {
+						key: 'brightness',
+						to: 0.2
+					}
+				}]
+			}],
+			tooltip: {
+				headerFormat: "",
+				pointFormat: '<b>{point.name}</b>获得 <b>{point.value}</b> 个鸡腿'
+			}
+		})
 	})
 
-	$('#sunburst_all_team_sum').highcharts({
-		title: {
-			text: 'BEJ48各队伍鸡腿总数详细比例'
-		},
-		subtitle: {
-			text: ''
-		},
-		series: [{
-			type: "sunburst",
-			data: data_all_team_sum,
-			allowDrillToNode: true,
-			cursor: 'pointer',
-			dataLabels: {
-				formatter: function() {
-					var point = this.point,
-							group = this.series.data.filter(x => x.parent === point.parent);
-					var groupTotal = group.map(x => x.value).reduce((a, b) => a + b, 0),
-							percentage = 100 * point.value/groupTotal;
-					return point.name + '<br>' + percentage.toFixed(1) + '%';
-				}
-			},
-			levels: [{
-				level: 1,
-				levelIsConstant: false
-			}, {
-				level: 2,
-				colorByPoint: true
-			},
-			{
-				level: 3,
-				colorVariation: {
-					key: 'brightness',
-					to: 0.2
-				}
-			}]
-		}],
-		tooltip: {
-			headerFormat: "",
-			pointFormat: '<b>{point.name}</b>获得 <b>{point.value}</b> 个鸡腿'
-		}
-	})
-
-	$('#sunburst_all_act_group_sum').highcharts({
-		title: {
-			text: 'BEJ48重新分组后各组鸡腿总数详细比例'
-		},
-		subtitle: {
-			text: ''
-		},
-		series: [{
-			type: "sunburst",
-			data: data_all_act_group_sum,
-			allowDrillToNode: true,
-			cursor: 'pointer',
-			dataLabels: {
-				formatter: function() {
-					var point = this.point,
-							group = this.series.data.filter(x => x.parent === point.parent);
-					var groupTotal = group.map(x => x.value).reduce((a, b) => a + b, 0),
-							percentage = 100 * point.value/groupTotal;
-					return point.name + '<br>' + percentage.toFixed(1) + '%';
-				}
-			},
-			levels: [{
-				level: 1,
-				levelIsConstant: false
-			}, {
-				level: 2,
-				colorByPoint: true
-			},
-			{
-				level: 3,
-				colorVariation: {
-					key: 'brightness',
-					to: 0.2
-				}
-			}]
-		}],
-		tooltip: {
-			headerFormat: "",
-			pointFormat: '<b>{point.name}</b>获得 <b>{point.value}</b> 个鸡腿'
-		}
-	});
 </script>
 <script src="http://cdn.bootcss.com/pangu/4.0.7/pangu.min.js"></script>
 </body>
