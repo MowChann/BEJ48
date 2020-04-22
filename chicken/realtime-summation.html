@@ -32,13 +32,10 @@
 			<a class="nav-list-link active" href="http://ut.48.mowchan.me/chicken/">有糖鸡腿榜</a>
 		</li>
 		<li class="nav-list-item">
-			<a href="http://ut.48.mowchan.me/stage/">公演记录</a>
+			<a href="http://ut.48.mowchan.me/stage/">公演</a>
 		</li>
 		<li class="nav-list-item">
-			<a href="http://48.mowchan.me/show/">b站账号</a>
-		</li>
-		<li class="nav-list-item">
-			<a href="http://48.mowchan.me/about.html#数据站">关于</a>
+			<a href="http://48.mowchan.me/show/">b站</a>
 		</li>
 	</header>
 	<section class="container">
@@ -50,6 +47,11 @@
 		</div>
 	</section>
 	<footer>
+		<div>
+			<h4>声明</h4>
+			<p>本站数据均来源于「口袋48」数据同步有一定延迟故各项排名仅供参考，一切结果以官方说明为准</p>
+			<p>本站的数据、照片以及分析只能用于学习交流，严禁任何组织或个人用于商业用途，其版权归原公司所有</p>
+		</div>
 		<div class="copyright">
 			&copy; 2018 - 2020 <a href="http://48.mowchan.me/">喵酱48</a><br>
 		</div>
@@ -66,14 +68,14 @@
 	$.getJSON("data/all_team_sum.json",function(data){
 		$('#sunburst_all_team_sum').highcharts({
 			title: {
-				text: 'BEJ48各队伍鸡腿总数详细比例'
+				text: data['title']
 			},
 			subtitle: {
-				text: ''
+				text: '数据更新于：' + data['time']
 			},
 			series: [{
 				type: "sunburst",
-				data: data,
+				data: data['data'],
 				allowDrillToNode: true,
 				cursor: 'pointer',
 				dataLabels: {
@@ -96,13 +98,13 @@
 					level: 3,
 					colorVariation: {
 						key: 'brightness',
-						to: 0.2
+						to: 0.24
 					}
 				}]
 			}],
 			tooltip: {
 				headerFormat: "",
-				pointFormat: '<b>{point.name}</b>获得 <b>{point.value}</b> 个鸡腿'
+				pointFormat: '<b>{point.name}</b> 获得 <b>{point.value}</b> 个鸡腿'
 			}
 		})
 	})
@@ -110,14 +112,14 @@
 	$.getJSON("data/all_act_group_sum.json",function(data){
 		$('#sunburst_all_act_group_sum').highcharts({
 			title: {
-				text: 'BEJ48重新分组后各组鸡腿总数详细比例'
+				text: data['title']
 			},
 			subtitle: {
-				text: ''
+				text: '数据更新于：' + data['time']
 			},
 			series: [{
 				type: "sunburst",
-				data: data,
+				data: data['data'],
 				allowDrillToNode: true,
 				cursor: 'pointer',
 				dataLabels: {
@@ -140,13 +142,13 @@
 					level: 3,
 					colorVariation: {
 						key: 'brightness',
-						to: 0.2
+						to: 0.24
 					}
 				}]
 			}],
 			tooltip: {
 				headerFormat: "",
-				pointFormat: '<b>{point.name}</b>获得 <b>{point.value}</b> 个鸡腿'
+				pointFormat: '<b>{point.name}</b> 获得 <b>{point.value}</b> 个鸡腿'
 			}
 		})
 	})
