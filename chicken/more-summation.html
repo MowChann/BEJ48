@@ -76,13 +76,16 @@
 </div>
 <script type="text/javascript">
 
+	var dt = new Date();
+	var ts = '?' + dt.getFullYear().toString() + (dt.getMonth() + 1).toString() + dt.getDate().toString() + dt.getHours().toString();
+
 	Highcharts.setOptions({
 		lang: {
 				thousandsSep: ','
 		}
 	})
 
-	$.getJSON("data/all_team_sum.json",function(data){
+	$.getJSON("data/all_team_sum.json" + ts, function(data){
 		$('#sunburst_all_team_sum').highcharts({
 			title: {
 				text: data['title']
@@ -126,7 +129,7 @@
 		})
 	})
 
-	$.getJSON("data/all_act_group_sum.json",function(data){
+	$.getJSON("data/all_act_group_sum.json" + ts, function(data){
 		$('#sunburst_all_act_group_sum').highcharts({
 			title: {
 				text: data['title']
@@ -170,7 +173,7 @@
 		})
 	})
 
-	$.getJSON("data/all_week_sum.json",function(data){
+	$.getJSON("data/all_week_sum.json" + ts, function(data){
 		$('#bar_all_week_sum').highcharts({
 			chart: {
 				type: 'bar',
@@ -217,7 +220,7 @@
 		})
 	})
 
-	$.getJSON("data/stage_week_sum.json",function(data){
+	$.getJSON("data/stage_week_sum.json" + ts, function(data){
 		$('#bar_stage_week_sum').highcharts({
 			chart: {
 				type: 'bar',
