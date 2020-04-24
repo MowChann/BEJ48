@@ -5,15 +5,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="renderer" content="webkit">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="description" content="4月20日BEJ48重大发表宣布将队伍分成四个组进行持续六个星期的对抗公演《春分的另一半》，这里是分组的具体名单" />
+	<meta name="description" content="实时统计BEJ48的鸡腿总数，包括各队比例，各分组以及个人占比，每周每人的分组统计…" />
 	<meta name="keywords" content="SNH48, BEJ48, GNZ48, 偶像应援" />
 	<meta name="format-detection" content="telephone=no,email=no,adress=no">
 	<meta name="apple-mobile-web-app-capable" content="no" />
 	<meta itemprop="image" content="http://m3.biz.itc.cn/pic/new/n/14/80/Img8438014_n.jpg"/>
-	<title>云公演成员分组 - 有糖鸡腿榜</title>
+	<title>有糖鸡腿榜</title>
 	<link href="http://48.mowchan.me/usr/themes/SimpleStone/assets/img/favicon.ico" rel="shortcut icon">
 	<link href="http://48.mowchan.me/usr/themes/SimpleStone/assets/css/style.css" rel="stylesheet">
 	<link href="http://cdn.bootcss.com/font-awesome/5.13.0/css/fontawesome.min.css" rel="stylesheet">
+	<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 	<!--[if lt IE 9]>
 	<script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
 	<script src="http://cdn.bootcss.com/respond.js/1.4.1/respond.min.js"></script>
@@ -26,7 +27,7 @@
 			<img src="http://48.mowchan.me/usr/themes/SimpleStone/assets/logo-48g.svg">
 		</a>
 		<li class="nav-list-item">
-			<a href="./">首页</a>
+			<a class="nav-list-link active" href="./">首页</a>
 		</li>
 		<li class="nav-list-item">
 			<a href="./realtime-summation.html">鸡腿榜</a>
@@ -35,28 +36,16 @@
 			<a href="./more-summation.html">更多统计</a>
 		</li>
 		<li class="nav-list-item">
-			<a class="nav-list-link active" href="./group.html">分组安排</a>
+			<a href="./group.html">分组安排</a>
 		</li>
 	</header>
 	<section class="container">
 		<div class="post">
-			<article class="post-block">
-				<h1 class="post-title">《春分的另一半》云公演成员分组</h1>
-				<div class="post-content">
-				<h3>A组（<b>神奇宝贝</b>）</h3>
-				<p>【Slogan】用十万伏特点亮你的心，pika pika！biu biu biu！</p>
-				<p>【成员】胡晓慧，杨晔，金锣赛，刘一菲（组长），柏欣妤，彭嘉敏，熊鑫，周湘</p>
-				<h3>B组（<b>七匹狼</b>）</h3>
-				<p>【Slogan】天黑请闭眼，嗷呜~！狼人请睁眼，狼人选择刀谁？自刀！</p>
-				<p>【成员】闫明筠，冯思佳，葛司琪（已退），孙语姗，沈小爱，赵天杨（组长），程戈，张智杰，王丹妮</p>
-				<h3>C组（<b>八年老兵</b>）</h3>
-				<p>【Slogan】八年老兵，老婆改嫁，孤家寡人，啥也不怕，惹我一下，一枪带俩！</p>
-				<p>【成员】田姝丽（组长），刘姝贤，张梦慧，张笑盈，刘闲，张怀瑾，张爱静，宁轲</p>
-				<h3>D组（<b>复仇者联盟</b>）</h3>
-				<p>【Slogan】把其它三个队当作灭霸，好人永远会胜利的！</p>
-				<p>【成员】郑一凡，叶苗苗，孙晓艳（组长），唐霖，李娜，王雨兰，曲美霖，任蔓琳，吕蕊，张睿怡</p>
-				</div>
-			</article>
+			<div>
+				<h3>声明</h3>
+				<p>本站数据均来源于「口袋48」数据同步有一定延迟故各项排名仅供参考，一切结果以官方说明为准</p>
+				<p>本站的数据、照片以及分析只能用于学习交流，严禁任何组织或个人用于商业用途，其版权归原公司所有</p>
+			</div>
 		</div>
 	</section>
 	<footer>
@@ -65,7 +54,6 @@
 		</div>
 	</footer>
 </div>
-
 <script src="http://cdn.bootcss.com/pangu/4.0.7/pangu.min.js"></script>
 <script>
 	pangu.spacingElementByClassName('post');

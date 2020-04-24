@@ -5,12 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="renderer" content="webkit">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="description" content="实时统计BEJ48的鸡腿总数，包括各队比例，各分组以及个人占比，每周每人的分组统计…" />
+	<meta name="description" content="更多的统计BEJ48的鸡腿总数，包括各队比例，各分组以及个人占比，每周每人的分组统计…" />
 	<meta name="keywords" content="SNH48, BEJ48, GNZ48, 偶像应援" />
 	<meta name="format-detection" content="telephone=no,email=no,adress=no">
 	<meta name="apple-mobile-web-app-capable" content="no" />
 	<meta itemprop="image" content="http://m3.biz.itc.cn/pic/new/n/14/80/Img8438014_n.jpg"/>
-	<title>实时鸡腿统计方式 - 有糖鸡腿榜</title>
+	<title>更多鸡腿统计方式 - 有糖鸡腿榜</title>
 	<link href="http://48.mowchan.me/usr/themes/SimpleStone/assets/img/favicon.ico" rel="shortcut icon">
 	<link href="http://48.mowchan.me/usr/themes/SimpleStone/assets/css/style.css" rel="stylesheet">
 	<link href="http://cdn.bootcss.com/font-awesome/5.13.0/css/fontawesome.min.css" rel="stylesheet">
@@ -32,10 +32,10 @@
 			<a href="./">首页</a>
 		</li>
 		<li class="nav-list-item">
-			<a class="nav-list-link active"href="./realtime-summation.html">鸡腿榜</a>
+			<a href="./realtime-summation.html">鸡腿榜</a>
 		</li>
 		<li class="nav-list-item">
-			<a  href="./more-summation.html">更多统计</a>
+			<a class="nav-list-link active" href="./more-summation.html">更多统计</a>
 		</li>
 		<li class="nav-list-item">
 			<a href="./group.html">分组安排</a>
@@ -43,13 +43,17 @@
 	</header>
 	<section class="container">
 		<div class="post">
-			<div id="sunburst_pk_team_sum">
+			<div id="sunburst_all_team_sum">
 			</div>
-			<p>统计口径：从2020年4月24日开始《春分另一半》后各场公演、联合公演直播的鸡腿总数（<b>不含综艺直播</b>）</p>
+			<p>统计口径：从2020年3月3日复工后各场综艺直播、公演、联合公演直播的鸡腿总数</p>
 			<br>
-			<div id="sunburst_pk_act_group_sum">
+			<div id="sunburst_all_act_group_sum">
 			</div>
-			<p>统计口径：从2020年4月24日开始《春分另一半》后各场公演、联合公演直播的鸡腿总数（<b>不含综艺直播</b>）</p>
+			<p>统计口径：从2020年3月3日复工后各场综艺直播、公演、联合公演直播的鸡腿总数</p>
+			<br>
+			<div id="bar_all_week_sum">
+			</div>
+			<p>统计口径：从2020年3月3日复工后各场综艺直播、公演、联合公演直播的鸡腿总数，其中3月2日开始算作第1周，以此类推（如4月20日为第8周）</p>
 			<br>
 			<div id="bar_stage_week_sum">
 			</div>
@@ -66,7 +70,7 @@
 	</section>
 	<footer>
 		<div class="copyright">
-			&copy; 2018 - 2020 <a href="http://48.mowchan.me/">喵酱48</a><br>
+			&copy; 2018 - 2020 喵酱48<br>
 		</div>
 	</footer>
 </div>
@@ -78,11 +82,8 @@
 		}
 	})
 
-	$.getJSON("data/pk_team_sum.json",function(data){
-		$('#sunburst_pk_team_sum').highcharts({
-			chart: {
-				height: '480px'
-			},
+	$.getJSON("data/all_team_sum.json",function(data){
+		$('#sunburst_all_team_sum').highcharts({
 			title: {
 				text: data['title']
 			},
@@ -125,11 +126,8 @@
 		})
 	})
 
-	$.getJSON("data/pk_act_group_sum.json",function(data){
-		$('#sunburst_pk_act_group_sum').highcharts({
-			chart: {
-				height: '480px'
-			},
+	$.getJSON("data/all_act_group_sum.json",function(data){
+		$('#sunburst_all_act_group_sum').highcharts({
 			title: {
 				text: data['title']
 			},
@@ -209,7 +207,8 @@
 			plotOptions: {
 				series: {
 					stacking: 'normal'
-				}, dataLabels: {
+				},
+				dataLabels: {
 					enabled: true,
 					format: '{y :.1f}'
 				}
