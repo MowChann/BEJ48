@@ -24,6 +24,7 @@
 | Team B |  闫明筠  |   Yan MingJun   | SNH48 四期生 |        [菌菇吗](https://space.bilibili.com/3684011)         |  3684011  |  ✅在团   |
 | Team B |   杨鑫   |    Yang Xin     | BEJ48 三期生 |      [是杨鑫耶](https://space.bilibili.com/387692387)       | 387692387 |  💔已退   |
 | Team B |  张羽涵  |   Zhang YuHan   | SHY48 二期生 |   [是银子不是脑子w](https://space.bilibili.com/11333064)    | 11333064  |  💔已退   |
+| Team B |  张梦慧  |  Zhang MengHui  | SNH48 六期生 |      [你可太慧了](https://space.bilibili.com/15676075)      | 15676075  |  ✅在团   |
 | Team B |  赵天杨  |  Zhao TianYang  | SHY48 三期生 |  [这条街最靓的崽儿](https://space.bilibili.com/382751025)   | 382751025 |  ✅在团   |
 | Team E |  陈倩楠  |  Chen QianNan   | SNH48 六期生 |     [悠唐小王子](https://space.bilibili.com/384471311)      | 384471311 |  ✅在团   |
 | Team E |  程宇璐  |   Cheng YuLu    | BEJ48 五期生 |     [悠唐程二少](https://space.bilibili.com/436245862)      | 436245862 |  ✅在团   |
