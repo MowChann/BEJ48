@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="实时统计BEJ48的鸡腿总数，包括各队比例，各分组以及个人占比，每周每人的分组统计…" />
+	<meta name="keywords" content="SNH48, BEJ48, GNZ48, 偶像应援" />
+	<meta name="format-detection" content="telephone=no,email=no,adress=no">
+	<meta name="apple-mobile-web-app-capable" content="no" />
+	<meta itemprop="image" content="http://www.vanguardstars.com/admin/UI/attached/image/20170420/20170420214324_49303.jpg"/>
+	<title>个人鸡腿统计 - 有糖鸡腿榜</title>
+	<link href="http://48.mowchan.me/usr/themes/SimpleStone/assets/img/favicon.ico" rel="shortcut icon">
+	<link href="http://48.mowchan.me/usr/themes/SimpleStone/assets/css/style.css" rel="stylesheet">
+	<link href="http://cdn.bootcss.com/font-awesome/5.13.0/css/fontawesome.min.css" rel="stylesheet">
+	<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/highcharts/8.0.4/highcharts.min.js"></script>
+	<script src="http://cdn.bootcss.com/highcharts/8.0.4/modules/sunburst.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+	<script src="http://cdn.bootcss.com/respond.js/1.4.1/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<div class="wrap">
+	<header>
+		<a href="http://ut.48.mowchan.me/" class="logo-link">
+			<img src="http://48.mowchan.me/usr/themes/SimpleStone/assets/logo-48g.svg">
+		</a>
+		<li class="nav-list-item">
+			<a href="./">首页</a>
+		</li>
+		<li class="nav-list-item">
+			<a class="nav-list-link active" href="./member.html">个人统计</a>
+		</li>
+		<li class="nav-list-item">
+			<a href="./group.html">分组统计</a>
+		</li>
+		<li class="nav-list-item">
+			<a href="./stage.html">公演记录</a>
+		</li>
+	</header>
+	<section class="container">
+		<div class="post">
+
+			<div id="bar_stage_member_group">
+			</div>
+			<p>统计口径：从 2020 年 3 月 15 日恢复公演开始<b>只包含各队公演及联合公演直播</b>的鸡腿总数， <b>不含综艺直播、出道纪念直播</b>，其中 3 月 2 日（星期一）开始算作第 1 周，3 月 15 日（星期日）恢复公演是第 2 周，以此类推（如 4 月 20 日为第 8 周）</p>
+			<br>
+
+			<div id="chart_stage_member_group_increase">
+			</div>
+			<p>统计口径：从 2020 年 3 月 15 日恢复公演开始<b>只包含各队公演及联合公演直播</b>的鸡腿总数， <b>不含综艺直播、出道纪念直播</b>，其中 3 月 2 日（星期一）开始算作第 1 周，3 月 15 日（星期日）恢复公演是第 2 周，以此类推（如 4 月 20 日为第 8 周）</p>
+			<br>
+
+		</div>
+	</section>
+	<footer>
+		<div class="copyright">
+			&copy; 2018 - 2020 <a href="http://48.mowchan.me/">喵酱48</a><br>
+		</div>
+	</footer>
+</div>
+<script type="text/javascript">
+
+	var dt = new Date();
+	var ts = '?' + dt.getFullYear().toString() + (dt.getMonth() + 1).toString() + dt.getDate().toString() + dt.getHours().toString();
+
+	Highcharts.setOptions({
+		lang: {
+				thousandsSep: ','
+		}
+	})
+
+	$.getJSON("data/stage_member_group.json" + ts, function(data){
+		$('#bar_stage_member_group').highcharts({
+			chart: {
+				type: 'bar',
+				height: 800
+			},
+			title: {
+				text: data['title']
+			},
+				subtitle: {
+					text: '数据更新于：' + data['time']
+				},
+			xAxis: {
+				categories: data['categories'],
+				labels: {
+						step: 1
+				}
+			},
+			yAxis: {
+				title: {
+					text: ' '
+				}
+			},
+			legend: {
+				backgroundColor: '#FFFFFF',
+				reversed: true
+			},
+			tooltip: {
+				tooltip: {
+					headerFormat: '<b>{point.key}</b>',
+					pointFormat: '{series.name}: {point.y} 个鸡腿',
+					valueDecimals: 1
+				},
+			},
+			plotOptions: {
+				series: {
+					stacking: 'normal'
+				},
+				dataLabels: {
+					enabled: true,
+					format: '{y :.1f}'
+				}
+			},
+			series: data['series']
+		})
+	})
+
+	$.getJSON("data/stage_member_group_increase.json" + ts, function(data){
+        $('#chart_stage_member_group_increase').highcharts({
+            chart: {
+            	type: 'line'
+            },
+            title: {
+            	text: data['title']
+            },
+			subtitle: {
+				text: '数据更新于：' + data['time']
+			},
+            xAxis: {
+                categories: data.categories
+            },
+            yAxis: {
+                allowDecimals: true,
+                title: { text: '' },
+            },
+            tooltip: {
+                formatter: function () {
+                    return '<b>' + this.series.name + '</b><br/>截止' + this.x + '，合计 ' + this.y + ' 个鸡腿';
+                }
+            },
+            legend: {
+            	layout: 'vertical',
+            	align: 'right',
+            	verticalAlign: 'middle',
+            	borderWidth: 0
+            },
+            series: data.series
+        });
+	})
+
+</script>
+<script src="http://cdn.bootcss.com/pangu/4.0.7/pangu.min.js"></script>
+<script>
+	pangu.spacingElementByClassName('post');
+</script>
+</body>
+</html>

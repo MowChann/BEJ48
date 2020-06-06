@@ -10,7 +10,7 @@
 	<meta name="format-detection" content="telephone=no,email=no,adress=no">
 	<meta name="apple-mobile-web-app-capable" content="no" />
 	<meta itemprop="image" content="http://www.vanguardstars.com/admin/UI/attached/image/20170420/20170420214324_49303.jpg"/>
-	<title>更多鸡腿统计方式 - 有糖鸡腿榜</title>
+	<title>分组鸡腿统计 - 有糖鸡腿榜</title>
 	<link href="http://48.mowchan.me/usr/themes/SimpleStone/assets/img/favicon.ico" rel="shortcut icon">
 	<link href="http://48.mowchan.me/usr/themes/SimpleStone/assets/css/style.css" rel="stylesheet">
 	<link href="http://cdn.bootcss.com/font-awesome/5.13.0/css/fontawesome.min.css" rel="stylesheet">
@@ -32,40 +32,33 @@
 			<a href="./">首页</a>
 		</li>
 		<li class="nav-list-item">
-			<a href="./realtime-summation.html">鸡腿榜</a>
+			<a href="./member.html">个人统计</a>
 		</li>
 		<li class="nav-list-item">
-			<a class="nav-list-link active" href="./more-summation.html">更多统计</a>
+			<a class="nav-list-link active" href="./group.html">分组统计</a>
 		</li>
 		<li class="nav-list-item">
-			<a href="./group.html">分组安排</a>
+			<a href="./stage.html">公演记录</a>
 		</li>
 	</header>
 	<section class="container">
 		<div class="post">
-			<div id="sunburst_all_team_sum">
+
+			<div id="sunburst_stage_team_ratio">
 			</div>
-			<p>统计口径：从2020年3月3日复工后各场综艺直播、公演、联合公演直播的鸡腿总数</p>
+			<p>统计口径：从2020年4月24日开始《春分另一半》后各场公演、联合公演直播的鸡腿总数（<b>不含综艺直播</b>）</p>
 			<br>
-			<div id="sunburst_all_act_group_sum">
+
+			<div id="sunburst_stage_group_ratio">
 			</div>
-			<p>统计口径：从2020年3月3日复工后各场综艺直播、公演、联合公演直播的鸡腿总数</p>
+			<p>统计口径：从2020年4月24日开始《春分另一半》后各场PK公演鸡腿总数（<b>不含综艺、出道纪念直播</b>）</p>
 			<br>
-			<div id="bar_all_week_sum">
+
+			<div id="chart_stage_group_increase">
 			</div>
-			<p>统计口径：从2020年3月3日复工后各场综艺直播、公演、联合公演直播的鸡腿总数，其中3月2日（星期一）开始算作第1周，以此类推（如4月20日为第8周）</p>
+			<p>统计口径：从2020年4月24日开始《春分另一半》后各场PK公演鸡腿总数（<b>不含综艺、出道纪念直播</b>）</p>
 			<br>
-			<div id="bar_stage_week_sum">
-			</div>
-			<p>统计口径：从2020年3月15日恢复公演开始<b>只包含各队公演及联合公演直播</b>的鸡腿总数， <b>不含综艺直播</b>，其中3月2日（星期一）开始算作第1周，3月15日（星期日）恢复公演是第2周，以此类推（如4月20日为第8周）</p>
-			<br>
-		</div>
-		<div class="post">
-			<div>
-				<h3>声明</h3>
-				<p>本站数据均来源于「口袋48」数据同步有一定延迟故各项排名仅供参考，一切结果以官方说明为准</p>
-				<p>本站的数据、照片以及分析只能用于学习交流，严禁任何组织或个人用于商业用途，其版权归原公司所有</p>
-			</div>
+
 		</div>
 	</section>
 	<footer>
@@ -85,8 +78,8 @@
 		}
 	})
 
-	$.getJSON("data/all_team_sum.json" + ts, function(data){
-		$('#sunburst_all_team_sum').highcharts({
+	$.getJSON("data/stage_team_ratio.json" + ts, function(data){
+		$('#sunburst_stage_team_ratio').highcharts({
 			chart: {
 				height: '480px'
 			},
@@ -132,8 +125,8 @@
 		})
 	})
 
-	$.getJSON("data/all_act_group_sum.json" + ts, function(data){
-		$('#sunburst_all_act_group_sum').highcharts({
+	$.getJSON("data/stage_group_ratio.json" + ts, function(data){
+		$('#sunburst_stage_group_ratio').highcharts({
 			chart: {
 				height: '480px'
 			},
@@ -179,98 +172,37 @@
 		})
 	})
 
-	$.getJSON("data/all_week_sum.json" + ts, function(data){
-		$('#bar_all_week_sum').highcharts({
-			chart: {
-				type: 'bar',
-				height: 800
-			},
-			title: {
-				text: data['title']
-			},
+	$.getJSON("data/stage_group_increase.json" + ts, function(data){
+        $('#chart_stage_group_increase').highcharts({
+            chart: {
+            	type: 'line'
+            },
+            title: {
+            	text: data['title']
+            },
 			subtitle: {
 				text: '数据更新于：' + data['time']
 			},
-			xAxis: {
-				categories: data['categories'],
-				labels: {
-						step: 1
-				}
-			},
-			yAxis: {
-				title: {
-					text: ' '
-				}
-			},
-			legend: {
-				backgroundColor: '#FFFFFF',
-				reversed: true
-			},
-			tooltip: {
-				tooltip: {
-					headerFormat: '<b>{point.key}</b>',
-					pointFormat: '{series.name}: {point.y} 个鸡腿',
-					valueDecimals: 1
-				},
-			},
-			plotOptions: {
-				series: {
-					stacking: 'normal'
-				},
-				dataLabels: {
-					enabled: true,
-					format: '{y :.1f}'
-				}
-			},
-			series: data['series']
-		})
-	})
-
-	$.getJSON("data/stage_week_sum.json" + ts, function(data){
-		$('#bar_stage_week_sum').highcharts({
-			chart: {
-				type: 'bar',
-				height: 800
-			},
-			title: {
-				text: data['title']
-			},
-				subtitle: {
-					text: '数据更新于：' + data['time']
-				},
-			xAxis: {
-				categories: data['categories'],
-				labels: {
-						step: 1
-				}
-			},
-			yAxis: {
-				title: {
-					text: ' '
-				}
-			},
-			legend: {
-				backgroundColor: '#FFFFFF',
-				reversed: true
-			},
-			tooltip: {
-				tooltip: {
-					headerFormat: '<b>{point.key}</b>',
-					pointFormat: '{series.name}: {point.y} 个鸡腿',
-					valueDecimals: 1
-				},
-			},
-			plotOptions: {
-				series: {
-					stacking: 'normal'
-				},
-				dataLabels: {
-					enabled: true,
-					format: '{y :.1f}'
-				}
-			},
-			series: data['series']
-		})
+            xAxis: {
+                categories: data.categories
+            },
+            yAxis: {
+                allowDecimals: true,
+                title: { text: '' },
+            },
+            tooltip: {
+                formatter: function () {
+                    return '<b>' + this.series.name + '</b><br/>截止' + this.x + '，合计 ' + this.y + ' 个鸡腿';
+                }
+            },
+            legend: {
+            	layout: 'vertical',
+            	align: 'right',
+            	verticalAlign: 'middle',
+            	borderWidth: 0
+            },
+            series: data.series
+        });
 	})
 
 </script>
