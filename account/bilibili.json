@@ -1,0 +1,488 @@
+[
+	{
+		"group": "BEJ48",
+		"team": "Team B",
+		"name": "程戈",
+		"period": "SHY48 三期生",
+		"nickname": "柠檬橙汁-",
+		"uid": 108132318,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team B",
+		"name": "段艺璇",
+		"period": "SNH48 五期生",
+		"nickname": "段艺璇的鲁拉鲁拉叻",
+		"uid": 85592005,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team B",
+		"name": "胡丽芝",
+		"period": "BEJ48 二期生",
+		"nickname": "小铁的showtime",
+		"uid": 313666067,
+		"in_work": false
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team B",
+		"name": "胡晓慧",
+		"period": "SNH48 五期生",
+		"nickname": "小包hoho",
+		"uid": 395611603,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team B",
+		"name": "胡晓慧",
+		"period": "SNH48 五期生",
+		"nickname": "小包hohoho",
+		"uid": 402847635,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team B",
+		"name": "吕蕊",
+		"period": "BEJ48 七期生",
+		"nickname": "lvxiaole_",
+		"uid": 253647370,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team B",
+		"name": "刘姝贤",
+		"period": "SNH48 六期生",
+		"nickname": "yeah耶椰奶",
+		"uid": 124963575,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team B",
+		"name": "宁轲",
+		"period": "BEJ48 七期生",
+		"nickname": "Redcoolsonlover",
+		"uid": 476024460,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team B",
+		"name": "林溪荷",
+		"period": "SNH48 六期生",
+		"nickname": "是小林还是小荷呢-_-",
+		"uid": 420409318,
+		"in_work": false
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team B",
+		"name": "李瑜璇",
+		"period": "CKG48 一期生",
+		"nickname": "比干大哥",
+		"uid": 49819859,
+		"in_work": false
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team B",
+		"name": "曲美霖",
+		"period": "BEJ48 四期生",
+		"nickname": "非著名网友小曲",
+		"uid": 470229653,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team B",
+		"name": "毛其羽",
+		"period": "BEJ48 二期生",
+		"nickname": "KMB貓仔",
+		"uid": 43550145,
+		"in_work": false
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team B",
+		"name": "青钰雯",
+		"period": "SNH48 六期生",
+		"nickname": "Qingyuwen",
+		"uid": 53191338,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team B",
+		"name": "沈小爱",
+		"period": "BEJ48 二期生",
+		"nickname": "追风少年沈小爱",
+		"uid": 109607529,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team B",
+		"name": "孙晓艳",
+		"period": "BEJ48 二期生",
+		"nickname": "不一样的小幸运",
+		"uid": 41908254,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team B",
+		"name": "田姝丽",
+		"period": "SNH48 五期生",
+		"nickname": "田野的奶茶小铺",
+		"uid": 15084177,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team B",
+		"name": "熊素君",
+		"period": "SNH48 五期生",
+		"nickname": "完美主义熊女士",
+		"uid": 236202893,
+		"in_work": false
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team B",
+		"name": "夏越",
+		"period": "SNH48 六期生",
+		"nickname": "憨厚老实的夏老板儿",
+		"uid": 30243859,
+		"in_work": false
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team B",
+		"name": "闫明筠",
+		"period": "SNH48 四期生",
+		"nickname": "菌菇吗",
+		"uid": 3684011,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team B",
+		"name": "杨鑫",
+		"period": "BEJ48 三期生",
+		"nickname": "是杨鑫耶",
+		"uid": 387692387,
+		"in_work": false
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team B",
+		"name": "张羽涵",
+		"period": "SHY48 二期生",
+		"nickname": "是银子不是脑子w",
+		"uid": 11333064,
+		"in_work": false
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team B",
+		"name": "张梦慧",
+		"period": "SNH48 六期生",
+		"nickname": "你可太慧了",
+		"uid": 15676075,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team B",
+		"name": "赵天杨",
+		"period": "SHY48 三期生",
+		"nickname": "这条街最靓的崽儿",
+		"uid": 382751025,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team E",
+		"name": "陈倩楠",
+		"period": "SNH48 六期生",
+		"nickname": "悠唐小王子",
+		"uid": 384471311,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team E",
+		"name": "程宇璐",
+		"period": "BEJ48 五期生",
+		"nickname": "悠唐程二少",
+		"uid": 436245862,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team E",
+		"name": "冯思佳",
+		"period": "SNH48 六期生",
+		"nickname": "Fukoko",
+		"uid": 359076464,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team E",
+		"name": "李丽满",
+		"period": "BEJ48 五期生",
+		"nickname": "芒果粒粒满",
+		"uid": 88488573,
+		"in_work": false
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team E",
+		"name": "刘胜男",
+		"period": "SNH48 六期生",
+		"nickname": "神话森林",
+		"uid": 434765020,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team E",
+		"name": "李想",
+		"period": "SNH48 六期生",
+		"nickname": "两块零五",
+		"uid": 24656993,
+		"in_work": false
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team E",
+		"name": "李梓",
+		"period": "SNH48 六期生",
+		"nickname": "Aki_安凉",
+		"uid": 20049958,
+		"in_work": false
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team E",
+		"name": "马玉灵",
+		"period": "SNH48 六期生",
+		"nickname": "小马小马是小马",
+		"uid": 23553661,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team E",
+		"name": "彭嘉敏",
+		"period": "BEJ48 四期生",
+		"nickname": "隔壁二班的小彭同学",
+		"uid": 93789411,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team E",
+		"name": "任蔓琳",
+		"period": "BEJ48 五期生",
+		"nickname": "一颗麦芽糖_Maiya",
+		"uid": 454828714,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team E",
+		"name": "苏杉杉",
+		"period": "SNH48 六期生",
+		"nickname": "魔法少女Air酱",
+		"uid": 17196336,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team E",
+		"name": "顼凘炀",
+		"period": "SNH48 六期生",
+		"nickname": "小星星星哒",
+		"uid": 16481728,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team E",
+		"name": "熊鑫",
+		"period": "BEJ48 四期生",
+		"nickname": "三斤的小日常",
+		"uid": 244375457,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team E",
+		"name": "杨一帆",
+		"period": "BEJ48 一期生",
+		"nickname": "万恶少女木易",
+		"uid": 9261999,
+		"in_work": false
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team E",
+		"name": "张爱静",
+		"period": "SHY48 一期生",
+		"nickname": "百年饼铺开张啦",
+		"uid": 2820158,
+		"in_work": false
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team E",
+		"name": "张笑盈",
+		"period": "SNH48 六期生",
+		"nickname": "Xx不让叫",
+		"uid": 11070847,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team E",
+		"name": "郑一凡",
+		"period": "SNH48 六期生",
+		"nickname": "是个树懒",
+		"uid": 109860136,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team E",
+		"name": "张智杰",
+		"period": "BEJ48 七期生",
+		"nickname": "是一颗小虎牙",
+		"uid": 20743274,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team J",
+		"name": "柏欣妤",
+		"period": "CKG48 一期生",
+		"nickname": "啵了个白捏",
+		"uid": 388335547,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team J",
+		"name": "葛司琪",
+		"period": "BEJ48 一期生",
+		"nickname": "蒸汽司桃脯",
+		"uid": 433161746,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team J",
+		"name": "黄恩茹",
+		"period": "BEJ48 一期生",
+		"nickname": "黄小盒儿",
+		"uid": 414122160,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team J",
+		"name": "韩家乐",
+		"period": "SHY48 一期生",
+		"nickname": "韩假乐",
+		"uid": 331311336,
+		"in_work": false
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team J",
+		"name": "何阳青青",
+		"period": "BEJ48 三期生",
+		"nickname": "是阿青呐",
+		"uid": 349940412,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team J",
+		"name": "刘闲",
+		"period": "BEJ48 一期生",
+		"nickname": "根本闲不下来",
+		"uid": 392646600,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team J",
+		"name": "孙语姗",
+		"period": "BEJ48 一期生",
+		"nickname": "小姗姗姗姗阿",
+		"uid": 302696721,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team J",
+		"name": "唐霖",
+		"period": "SHY48 三期生",
+		"nickname": "-唐小猪",
+		"uid": 11134194,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team J",
+		"name": "王雨煊",
+		"period": "BEJ48 一期生",
+		"nickname": "酸奶猪00",
+		"uid": 347202871,
+		"in_work": false
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team J",
+		"name": "许婉玉",
+		"period": "BEJ48 一期生",
+		"nickname": "bbox小天才-许小玉",
+		"uid": 235016048,
+		"in_work": false
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team J",
+		"name": "杨晔",
+		"period": "BEJ48 一期生",
+		"nickname": "杨聪明馒头",
+		"uid": 43648895,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team J",
+		"name": "张怀瑾",
+		"period": "BEJ48 一期生",
+		"nickname": "小鱼说哦酱紫啊",
+		"uid": 945280,
+		"in_work": true
+	},
+	{
+		"group": "BEJ48",
+		"team": "Team J",
+		"name": "周湘",
+		"period": "BEJ48 四期生",
+		"nickname": "-xiangcai-",
+		"uid": 393035228,
+		"in_work": true
+	}
+]
