@@ -11,6 +11,7 @@
 |        |          |                 |              |     [小包hohoho](https://space.bilibili.com/402847635)      | 402847635 |  ✅在团   |
 | Team B |   吕蕊   |      Lv Rui     | BEJ48 七期生 |      [lvxiaole_](https://space.bilibili.com/253647370)      | 253647370 |  ✅在团   |
 | Team B |  刘姝贤  |   Liu ShuXian   | SNH48 六期生 |     [yeah耶椰奶](https://space.bilibili.com/124963575)      | 124963575 |  ✅在团   |
+| Team B |   宁轲   |     Ning Ke     | BEJ48 七期生 |   [Redcoolsonlover](https://space.bilibili.com/476024460)   | 476024460 |  ✅在团   |
 | Team B |  林溪荷  |    Lin XiHe     | SNH48 六期生 | [是小林还是小荷呢-\_-](https://space.bilibili.com/420409318)| 420409318 |  💔已退   |
 | Team B |  李瑜璇  |    Li YuXuan    | CKG48 一期生 |       [比干大哥](https://space.bilibili.com/49819859)       | 49819859  |  💔已退   |
 | Team B |  曲美霖  |    Qu MeiLin    | BEJ48 四期生 |   [非著名网友小曲](https://space.bilibili.com/470229653)    | 470229653 |  ✅在团   |
@@ -40,23 +41,23 @@
 | Team E |  顼凘炀  |    Xu SiYang    | SNH48 六期生 |      [小星星星哒](https://space.bilibili.com/16481728)      | 16481728  |  ✅在团   |
 | Team E |   熊鑫   |    Xiong Xin    | BEJ48 四期生 |    [三斤的小日常](https://space.bilibili.com/244375457)     | 244375457 |  ✅在团   |
 | Team E |  杨一帆  |   Yang YiFan    | BEJ48 一期生 |     [万恶少女木易](https://space.bilibili.com/9261999)      |  9261999  |  💔已退   |
-| Team E |  张爱静  |  Zhang AiJing   | SHY48 一期生 |    [百年饼铺开张啦](https://space.bilibili.com/2820158)     |  2820158  |  ✅在团   |
+| Team E |  张爱静  |  Zhang AiJing   | SHY48 一期生 |    [百年饼铺开张啦](https://space.bilibili.com/2820158)     |  2820158  |  💔已退   |
 | Team E |  张笑盈  | Zhang XiaoYing  | SNH48 六期生 |       [Xx不让叫](https://space.bilibili.com/11070847)       | 11070847  |  ✅在团   |
 | Team E |  郑一凡  |   Zheng YiFan   | SNH48 六期生 |      [是个树懒](https://space.bilibili.com/109860136)       | 109860136 |  ✅在团   |
 | Team E |  张智杰  |  Zhang ZhiJie   | BEJ48 七期生 |     [是一颗小虎牙](https://space.bilibili.com/20743274)     | 20743274  |  ✅在团   |
 | Team J |  柏欣妤  |    Bai XinYu    | CKG48 一期生 |     [啵了个白捏](https://space.bilibili.com/388335547)      | 388335547 |  ✅在团   |
 | Team J |  葛司琪  |     Ge SiQi     | BEJ48 一期生 |     [蒸汽司桃脯](https://space.bilibili.com/433161746)      | 433161746 |  ✅在团   |
 | Team J |  黄恩茹  |   Huang EnRu    | BEJ48 一期生 |      [黄小盒儿](https://space.bilibili.com/414122160)       | 414122160 |  ✅在团   |
-| Team J |  韩家乐  |    Han JiaLe    | SHY48 一期生 |       [韩假乐](https://space.bilibili.com/331311336)        | 331311336 |  ✅在团   |
+| Team J |  韩家乐  |    Han JiaLe    | SHY48 一期生 |       [韩假乐](https://space.bilibili.com/331311336)        | 331311336 |  💔已退   |
 | Team J | 何阳青青 | HeYang QingQing | BEJ48 三期生 |      [是阿青呐](https://space.bilibili.com/349940412)       | 349940412 |  ✅在团   |
 | Team J |   刘闲   |    Liu Xian     | BEJ48 一期生 |    [根本闲不下来](https://space.bilibili.com/392646600)     | 392646600 |  ✅在团   |
 | Team J |  孙语姗  |   Sun YuShan    | BEJ48 一期生 |    [小姗姗姗姗阿](https://space.bilibili.com/302696721)     | 302696721 |  ✅在团   |
 | Team J |   唐霖   |    Tang Lin     | SHY48 三期生 |       [-唐小猪](https://space.bilibili.com/11134194)        | 11134194  |  ✅在团   |
-| Team J |  王雨煊  |   Wang YuXuan   | BEJ48 一期生 |      [酸奶猪00](https://space.bilibili.com/347202871)       | 347202871 |  ✅在团   |
+| Team J |  王雨煊  |   Wang YuXuan   | BEJ48 一期生 |      [酸奶猪00](https://space.bilibili.com/347202871)       | 347202871 |  💔已退   |
 | Team J |  许婉玉  |    Xu WanYu     | BEJ48 一期生 |  [bbox小天才-许小玉](https://space.bilibili.com/235016048)  | 235016048 |  💔已退   |
 | Team J |   杨晔   |     Yang Ye     | BEJ48 一期生 |      [杨聪明馒头](https://space.bilibili.com/43648895)      | 43648895  |  ✅在团   |
 | Team J |  张怀瑾  |  Zhang HuaiJin  | BEJ48 一期生 |     [小鱼说哦酱紫啊](https://space.bilibili.com/945280)     |  945280   |  ✅在团   |
 | Team J |   周湘   |   Zhou Xiang    | BEJ48 四期生 |     [-xiangcai-](https://space.bilibili.com/393035228)      | 393035228 |  ✅在团   |
 
 
-> 转载使用时请注明来源：https://github.com/mowchann/bej48/
+> 转载使用时请注明来源：https://github.com/mowchann/iutown
